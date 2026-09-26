@@ -1,0 +1,6 @@
+{
+  "name": "Apex MK-IV Performance Lab",
+  "description": "The legend reborn. Twin-turbo 3.0L inline-6 high performance homologation sports car laboratory, circuit telemetry bench, and bespoke racing configurator.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,52 @@
+@import "tailwindcss";
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    font-family: 'Space Grotesk', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background-color: #0b0b0e;
+    color: #f2eff0;
+    overflow-x: hidden;
+  }
+}
+
+.font-anton {
+  font-family: 'Anton', sans-serif;
+  letter-spacing: 0.03em;
+}
+
+.font-space {
+  font-family: 'Space Grotesk', sans-serif;
+}
+
+/* Custom glow and stripe animations */
+@keyframes pulseGlow {
+  0%, 100% { opacity: 0.8; transform: scaleY(1); }
+  50% { opacity: 1; transform: scaleY(1.02); }
+}
+
+.animate-pulse-glow {
+  animation: pulseGlow 4s ease-in-out infinite;
+}
+
+/* Custom laser bar styling */
+.laser-bar {
+  background: linear-gradient(180deg, rgba(255,107,0,0) 0%, rgba(255,107,0,0.6) 30%, #ff6b00 50%, rgba(255,170,0,0.8) 70%, rgba(255,107,0,0) 100%);
+  filter: drop-shadow(0 0 15px #ff6b00);
+}
+
+.laser-core {
+  background: #ffffff;
+  box-shadow: 0 0 20px #ffffff, 0 0 40px #ff6b00, 0 0 80px #ffaa00;
+}
+
+/* Hide scrollbar for clean horizontal spec scrollers */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
